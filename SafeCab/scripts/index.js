@@ -1,14 +1,17 @@
 ﻿// For an introduction to the Blank template, see the following documentation:
 // http://go.microsoft.com/fwlink/?LinkID=397705
-// To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints, 
+// To debug code on page load in Ripple or on Android devices/emulators: launch your app, set breakpoints,
 // and then run "window.location.reload()" in the JavaScript Console.
-module SafeCab {
+var SafeCab;
+(function (SafeCab) {
     "use strict";
 
-    export module Application {
-        export function initialize() {
+    (function (Application) {
+        function initialize() {
+                    $('body').html(new loginView().render().el);
             document.addEventListener('deviceready', onDeviceReady, false);
         }
+        Application.initialize = initialize;
 
         function onDeviceReady() {
             // Handle the Cordova pause and resume events
@@ -16,6 +19,7 @@ module SafeCab {
             document.addEventListener('resume', onResume, false);
 
             // TODO: Cordova has been loaded. Perform any initialization that requires Cordova here.
+
         }
 
         function onPause() {
@@ -25,10 +29,11 @@ module SafeCab {
         function onResume() {
             // TODO: This application has been reactivated. Restore application state here.
         }
-
-    }
+    })(SafeCab.Application || (SafeCab.Application = {}));
+    var Application = SafeCab.Application;
 
     window.onload = function () {
         Application.initialize();
-    }
-}
+    };
+})(SafeCab || (SafeCab = {}));
+//# sourceMappingURL=index.js.map

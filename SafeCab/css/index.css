@@ -1,2 +1,60 @@
 ﻿body {
+    font-family:'Segoe Print' !important;
+}
+.b-border {
+    border-bottom:1px solid #808080;
+}
+.padding-t10-b5 {
+    padding-top:10px;
+    padding-bottom:5px;
+}
+.brand {
+    color:black;
+    font-size:27px;
+    font-weight:bold;
+    line-height:34px;
+}
+.text-center {
+    text-align:center;
+}
+.g {
+    padding:10px 5px;
+background-color:#d34836;
+color:white;
+}
+.f{
+        padding:10px 5px;
+    background-color:#3b5998;
+    color:white;
+}
+.pad-left-10 {
+    padding-left:10px;
+}
+.font-s26 {
+    font-size:26px !important;
+}
+.cursor {
+    cursor:pointer;
+}
+.logo {
+    padding-top:25px;
+}
+.welcome {
+    font-weight:bold;
+    font-size:18px;
+}
+.sub-text {
+   color:#808080;
+}
+.pad-t34 {
+    padding-top:34px;
+}
+.pad-t22 {
+    padding-top:22px;
+}
+.why a{
+    color:#22a529;
+}
+.r a {
+    color:grey;
 }
